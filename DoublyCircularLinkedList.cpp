@@ -5,6 +5,8 @@
 #include<string>
 #include <fstream>
 
+#include "DateVector.h"
+
 using namespace std;
 
 // Function to convert a string to lowercase
@@ -18,6 +20,8 @@ void toLowerCase(string& str) {
 //display
 void displayData(MyVector& obj);
 void displayDataOnFile(MyVector& obj,ofstream& file);
+
+
 
 //Node
 Node::Node(string paramLocation)
@@ -81,8 +85,8 @@ void DoublyCircularLinkedList::removeAll()
         Node* temp = head->next;
         delete head;
         head = temp;
-        if (head != nullptr) {
-            head->prev = nullptr;
+        if (head != NULL) {
+            if(head->prev) head->prev = NULL;
         }
     }
 }
@@ -273,4 +277,21 @@ void displayDataOnFile(MyVector& obj,ofstream& file) {
             << ", Date of Death: " << obj[i].getDateOfDeath()
             << ", Gender: " << obj[i].getGender() << endl;
     }
+}
+
+
+
+
+
+string Node::dateWithMinMartyrs() {
+
+    dateVector min;
+    for (int i = 0; i < dataSortName.size(); i++)
+    {
+        min.add(dataSortName[i].getDateOfDeath());
+    }
+    string minDate= min.getMinCountDate();
+    min.~dateVector();
+    return minDate;
+
 }

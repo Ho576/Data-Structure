@@ -305,7 +305,7 @@ void handleStatisticsReport(Node*& SelectedLocation) {
     }
     case 'd':
     {
-        cout << 'd' << endl;
+        cout << SelectedLocation->dateWithMinMartyrs() << endl;
         break;
     }
     default:

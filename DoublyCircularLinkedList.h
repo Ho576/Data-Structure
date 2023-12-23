@@ -21,6 +21,8 @@ public:
     void display();
     void displayTravers() { dataSortDate.sort(); dataSortDate.traverse(); }
 
+    string dateWithMinMartyrs();
+
 
 };
 

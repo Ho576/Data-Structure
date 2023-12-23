@@ -21,7 +21,7 @@
     <ClCompile Include="MyVector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Stack.cpp">
+    <ClCompile Include="DateVector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Martyr.cpp">
@@ -41,7 +41,7 @@
     <ClInclude Include="MyVector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Stack.h">
+    <ClInclude Include="DateVector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Martyr.h">

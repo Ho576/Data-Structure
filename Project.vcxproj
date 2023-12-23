@@ -131,14 +131,14 @@
     <ClCompile Include="LinkedStack.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Martyr.cpp" />
-    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="DateVector.cpp" />
     <ClCompile Include="MyVector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DoublyCircularLinkedList.h" />
     <ClInclude Include="Martyr.h" />
     <ClInclude Include="LinkedStack.h" />
-    <ClInclude Include="Stack.h" />
+    <ClInclude Include="DateVector.h" />
     <ClInclude Include="MyVector.h" />
   </ItemGroup>
   <ItemGroup>
